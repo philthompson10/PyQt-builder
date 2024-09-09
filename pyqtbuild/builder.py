@@ -10,6 +10,7 @@ import sysconfig
 from sipbuild import (Buildable, BuildableModule, Builder, Option, Project,
         PyProjectOptionException, UserException)
 
+from .build_system_extension import PyQtBuildSystemExtension
 from .installable import QmakeTargetInstallable
 from .version import PYQTBUILD_VERSION_STR
 
@@ -73,6 +74,10 @@ class QmakeBuilder(Builder):
             # project options.
             project = self.project
 
+            project.register_build_system_extension(
+                    'PyQt' + str(self.qt_version >> 16),
+                    PyQtBuildSystemExtension)
+
             # Determine the target platform, ignoring any current value.
             xspec = self.qt_configuration['QMAKE_XSPEC']
 
@@ -131,9 +136,9 @@ class QmakeBuilder(Builder):
                 # to the most up to date code that the current version of SIP
                 # will generate.
                 if project.sip_module == 'PyQt5.sip':
-                    project.abi_version = '12.13'
+                    project.abi_version = '12.15'
                 elif project.sip_module == 'PyQt6.sip':
-                    project.abi_version = '13.6'
+                    project.abi_version = '13.8'
 
         super().apply_user_defaults(tool)
 
