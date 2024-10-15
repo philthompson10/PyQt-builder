@@ -66,6 +66,16 @@ _QT_METADATA = {
     #    VersionedMetadata(qml=True),
 
     'QtMultimedia': (
+        VersionedMetadata(version=(6, 8, 0),
+                lib_deps={'': ('QtMultimediaQuick', )},
+                other_lib_deps={
+                    'macos': ('libavcodec.61.dylib', 'libavformat.61.dylib',
+                            'libavutil.59.dylib', 'libswresample.5.dylib',
+                            'libswscale.8.dylib'),
+                    'win': ('avcodec-61.dll', 'avformat-61.dll',
+                            'avutil-59.dll', 'swresample-5.dll',
+                            'swscale-8.dll')},
+                qml=True),
         VersionedMetadata(version=(6, 7, 1),
                 lib_deps={'': ('QtMultimediaQuick', )},
                 other_lib_deps={
