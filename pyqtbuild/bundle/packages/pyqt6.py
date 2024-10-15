@@ -14,7 +14,7 @@ _QT_METADATA = {
         VersionedMetadata(dll=False),
 
     'QtBluetooth':
-        VersionedMetadata(version=(6, 2, 0), qml=True),
+        VersionedMetadata(version=(6, 2, 0)),
 
     'QtCore': (
         VersionedMetadata(version=(6, 7, 0),
@@ -63,7 +63,7 @@ _QT_METADATA = {
         VersionedMetadata(),
 
     #'QtLocation':
-    #    VersionedMetadata(qml=True),
+    #    VersionedMetadata(),
 
     'QtMultimedia': (
         VersionedMetadata(version=(6, 8, 0),
@@ -75,7 +75,7 @@ _QT_METADATA = {
                     'win': ('avcodec-61.dll', 'avformat-61.dll',
                             'avutil-59.dll', 'swresample-5.dll',
                             'swscale-8.dll')},
-                qml=True),
+                ),
         VersionedMetadata(version=(6, 7, 1),
                 lib_deps={'': ('QtMultimediaQuick', )},
                 other_lib_deps={
@@ -85,17 +85,17 @@ _QT_METADATA = {
                     'win': ('avcodec-60.dll', 'avformat-60.dll',
                             'avutil-58.dll', 'swresample-4.dll',
                             'swscale-7.dll')},
-                qml=True),
+                ),
         VersionedMetadata(version=(6, 7, 0),
                 lib_deps={'': ('QtMultimediaQuick', )},
                 other_lib_deps={
                     'win': ('avcodec-60.dll', 'avformat-60.dll',
                             'avutil-58.dll', 'swresample-4.dll',
                             'swscale-7.dll')},
-                qml=True),
+                ),
         VersionedMetadata(version=(6, 2, 0),
                 lib_deps={'': ('QtMultimediaQuick', )},
-                qml=True)),
+                )),
 
     'QtMultimediaWidgets':
         VersionedMetadata(version=(6, 2, 0)),
@@ -104,7 +104,7 @@ _QT_METADATA = {
         VersionedMetadata(),
 
     'QtNfc':
-        VersionedMetadata(version=(6, 2, 0), qml=True),
+        VersionedMetadata(version=(6, 2, 0)),
 
     'QtOpenGL':
         VersionedMetadata(),
@@ -122,7 +122,7 @@ _QT_METADATA = {
     'QtPositioning':
         VersionedMetadata(version=(6, 2, 0),
                 lib_deps={'': ('QtPositioningQuick', )},
-                qml=True),
+                ),
 
     'QtPrintSupport':
         VersionedMetadata(),
@@ -133,10 +133,10 @@ _QT_METADATA = {
                         'QtLabsAnimation', 'QtLabsFolderListModel',
                         'QtLabsQmlModels', 'QtLabsSettings',
                         'QtLabsSharedImage', 'QtLabsWavefrontMesh')},
-                qml=True),
+                ),
         VersionedMetadata(
                 lib_deps={'': ('QtQmlModels', 'QtQmlWorkerScript')},
-                qml=True)),
+                )),
 
     'QtQuick': (
         VersionedMetadata(version=(6, 7, 0),
@@ -158,7 +158,7 @@ _QT_METADATA = {
                         'QtQuickParticles', 'QtQuickShapes',
                         'QtQuickTemplates2', 'QtQuickTest',
                         'QtQuickTimeline', 'QtQuickTimelineBlendTrees')},
-                qml=True),
+                ),
         VersionedMetadata(version=(6, 6, 3),
                 lib_deps={'': ('QtQuickControls2', 'QtQuickControls2Basic',
                         'QtQuickControls2BasicStyleImpl',
@@ -176,7 +176,7 @@ _QT_METADATA = {
                         'QtQuickParticles', 'QtQuickShapes',
                         'QtQuickTemplates2', 'QtQuickTest',
                         'QtQuickTimeline')},
-                qml=True),
+                ),
         VersionedMetadata(version=(6, 2, 0),
                 lib_deps={'': ('QtQuickControls2', 'QtQuickControls2Impl',
                         'QtQuickDialogs2', 'QtQuickDialogs2QuickImpl',
@@ -184,12 +184,12 @@ _QT_METADATA = {
                         'QtQuickParticles', 'QtQuickShapes',
                         'QtQuickTemplates2', 'QtQuickTest',
                         'QtQuickTimeline')},
-                qml=True),
+                ),
         VersionedMetadata(
                 lib_deps={'': ('QtQuickControls2', 'QtQuickControls2Impl',
                         'QtQuickLayouts', 'QtQuickParticles', 'QtQuickShapes',
                         'QtQuickTemplates2', 'QtQuickTest')},
-                qml=True)),
+                )),
 
     'QtQuick3D': (
         VersionedMetadata(version=(6, 7, 0),
@@ -201,7 +201,7 @@ _QT_METADATA = {
                         'QtQuick3DPhysics', 'QtQuick3DPhysicsHelpers',
                         'QtQuick3DRuntimeRender', 'QtQuick3DUtils',
                         'QtShaderTools')},
-                qml=True),
+                ),
         VersionedMetadata(version=(6, 6, 0),
                 lib_deps={
                         '': ('QtConcurrent', 'QtQuick3DAssetImport',
@@ -210,7 +210,7 @@ _QT_METADATA = {
                         'QtQuick3DParticles', 'QtQuick3DPhysics',
                         'QtQuick3DPhysicsHelpers', 'QtQuick3DRuntimeRender',
                         'QtQuick3DUtils', 'QtShaderTools')},
-                qml=True),
+                ),
         VersionedMetadata(version=(6, 4, 0),
                 lib_deps={
                         '': ('QtConcurrent', 'QtQuick3DAssetImport',
@@ -218,7 +218,7 @@ _QT_METADATA = {
                         'QtQuick3DHelpers', 'QtQuick3DIblBaker',
                         'QtQuick3DParticles', 'QtQuick3DRuntimeRender',
                         'QtQuick3DUtils', 'QtShaderTools')},
-                qml=True),
+                ),
         VersionedMetadata(version=(6, 1, 0),
                 lib_deps={
                         '': ('QtQuick3DAssetImport', 'QtQuick3DAssetUtils',
@@ -226,12 +226,12 @@ _QT_METADATA = {
                         'QtQuick3DIblBaker', 'QtQuick3DParticles',
                         'QtQuick3DRuntimeRender', 'QtQuick3DUtils',
                         'QtShaderTools')},
-                qml=True),
+                ),
         VersionedMetadata(
                 lib_deps={
                         '': ('QtQuick3DAssetImport', 'QtQuick3DRuntimeRender',
                         'QtQuick3DUtils', 'QtShaderTools')},
-                qml=True)),
+                )),
 
     'QtQuickWidgets':
         VersionedMetadata(),
@@ -239,12 +239,12 @@ _QT_METADATA = {
     'QtRemoteObjects':
         VersionedMetadata(version=(6, 2, 0),
                 lib_deps={'': ('QtRemoteObjectsQml', )},
-                qml=True),
+                ),
 
     'QtSensors':
         VersionedMetadata(version=(6, 2, 0),
                 lib_deps={'': ('QtSensorsQuick', )},
-                qml=True),
+                ),
 
     'QtSerialPort':
         VersionedMetadata(version=(6, 2, 0)),
@@ -263,20 +263,20 @@ _QT_METADATA = {
         VersionedMetadata(),
 
     'QtTest':
-        VersionedMetadata(qml=True),
+        VersionedMetadata(),
 
     'QtTextToSpeech':
-        VersionedMetadata(version=(6, 4, 0), qml=True),
+        VersionedMetadata(version=(6, 4, 0)),
 
     'QtWebChannel': (
         # The quick library may have been present from the start.
         VersionedMetadata(version=(6, 6, 0),
                 lib_deps={'': ('QtWebChannelQuick', )},
-                qml=True),
-        VersionedMetadata(version=(6, 2, 0), qml=True)),
+                ),
+        VersionedMetadata(version=(6, 2, 0))),
 
     'QtWebSockets':
-        VersionedMetadata(version=(6, 2, 0), qml=True),
+        VersionedMetadata(version=(6, 2, 0)),
 
     'QtWidgets':
         VersionedMetadata(),
