@@ -140,9 +140,9 @@ class QmakeBuilder(Builder):
             # when PyQt5 and PyQt6 use %MinimumABIVersion unconditionaly.
             if not project.abi_version:
                 if project.sip_module == 'PyQt5.sip':
-                    project.abi_version = '12.15'
+                    project.abi_version = '12.19'
                 elif project.sip_module == 'PyQt6.sip':
-                    project.abi_version = '13.8'
+                    project.abi_version = '13.12'
 
         super().apply_user_defaults(tool)
 
